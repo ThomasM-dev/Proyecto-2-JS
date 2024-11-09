@@ -1,0 +1,104 @@
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+header h1 {
+  font-size: 2em;
+  color: #2c3e50;
+  margin-bottom: 0.5em;
+}
+
+header h2 {
+  font-size: 1em;
+  color: #34495e;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.descripcion h3 {
+  font-size: 1.1em;
+  color: #2c3e50;
+  margin-bottom: 1em;
+}
+
+.descripcion ol {
+  padding-left: 1.5rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Lista de tareas */
+.lista {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.lista .list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+}
+
+/* Estilos para los inputs */
+.input-text {
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  width: 200px;
+  font-size: 0.9em;
+}
+
+/* botones personalizados */
+.btn-custom {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.agregar {
+  background-color: #3498db;
+  color: white;
+}
+
+.eliminar {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.guardar {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.eliminar-lista {
+  background-color: #f39c12;
+  color: white;
+}
+
+.btn-custom:hover {
+  filter: brightness(0.9);
+}
+
+@media (max-width: 600px) {
+  .tarea-container {
+      flex-direction: column;
+      align-items: stretch;
+  }
+
+  .input-text, .btn-custom {
+      width: 100%;
+  }
+}
